@@ -5,6 +5,13 @@ body{
     margin: 0;
     background-color: black;
 }
+.navi{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
 h1{
     text-align: center;
   font-size: 4rem;
@@ -12,22 +19,33 @@ h1{
     color: #fff;
 }
 
-h2{
+ h2{
     text-align: right;
     color: #fff;
     align-content: center;
     align-items: center;
     margin-top: 10px;
     margin-right: 20px;
-}
-p{
+} 
+h3{
     color: #fff;
-    font-weight: 600;
+    font-family:cursive;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+p {
+    text-align: center;
+     color: #fff;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     font-size: larger;
+   
 }
 .cardContainer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction:column;
     justify-content: center;
 
 }
@@ -36,11 +54,12 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+   
 }
 .btn{
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +68,11 @@ p{
     color: aliceblue;
     font-weight: bold;
     font-size: 30px;
+    border-radius: 25px;
 }
 .btn:hover {
     transform: scale(1.1);
+  }
+  .container .text{
+    visibility: hidden;
   }

@@ -4,63 +4,343 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ColorBar</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 20px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #D3D3D3; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background:#808080; 
+        }
+        </style>
+
 </head>
 <body>
+    <nav class="navi">
+        <h3>ColorBar</h3>
     <a href="AboutMe.html" style="text-decoration: none">
-        <h2 class="about">About Me</h2></a>
+        <h2 class="about">About Me</h2></a></nav>
         <h1>Your Color Palatte</h1>
+
     <div class="container">
         <div class="cardContainer">
-                <button class="btn"  style="background-color: #f87171;">Red<br>#f87171</button>
+                <button class="btn" style="background-color: #FF0000;" data-color="#FF0000"> Red<br>#FF0000</button>
+                    <p class="copy_alert text">Copied✅</p> 
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #fb923c;">Orange<br>#fb923c</button>
+                <button class="btn"  style="background-color: #8B0000;" data-color="#8B0000">DarkRed<br>#8B0000</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #fbbf24;">Amber<br>#fbbf24</button>
+                <button class="btn"  style="background-color: #B22222;" data-color="#B22222">FireBrick<br>#B22222</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #facc15;">Yellow<br>#facc15</button>
+                <button class="btn"  style="background-color: #DC143C;" data-color="#DC143C">Crimson<br>#DC143C</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #a3e635;">Lime<br>#a3e635</button>
+                <button class="btn"  style="background-color: #E9967A;" data-color="#E9967A">DarkSalmon<br>#E9967A</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #4ade80;">Green<br>#4ade80</button>
+                <button class="btn"  style="background-color: #FA8072;" data-color="#FA8072">Salmon<br>#FA8072</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #34d399;">Emerald<br>#34d399</button>
+                <button class="btn"  style="background-color: #FFA07A;" data-color="#FFA07A">LightSalmon<br>#FFA07A</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #22d3ee;">Cyan<br>#22d3ee</button>
+                <button class="btn"  style="background-color: #F08080;" data-color="#F08080" >LightCoral<br>#F08080</button>
+                <p class="copy_alert text">Copied✅</p>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FFC0CB;" data-color="#FFC0CB">Pink<br>#FFC0CB</button>
+                <p class="copy_alert text">Copied✅</p>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FFB6C1;" data-color="#FFB6C1">LightPink<br>#FFB6C1</button>
+                <p class="copy_alert text">Copied✅</p>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FF69B4;" data-color="#FF69B4">HotPink<br>#FF69B4</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FF1493;" data-color="#FF1493">DeepPink<br>#FF1493</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #38bdf8;">LightBlue<br>#38bdf8</button>
+                <button class="btn"  style="background-color: #C71585;" data-color="#C71585">MediumVioletRed<br>#C71585</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
+
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #60a5fa;">Blue<br>#60a5fa</button>
+                <button class="btn"  style="background-color: #DB7093;" data-color="#DB7093">PaleVioletRed<br>#DB7093</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+
             </div>
+
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #818cf8;">Indigo<br>#818cf8</button>
+                <button class="btn"  style="background-color: #FF7F50;" data-color="#FF7F50">Coral<br>#FF7F50</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
+
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #c884fc;">Purple<br>#c884fc</button>
+                <button class="btn"  style="background-color: #FF6347;" data-color="#FF6347">Tomato<br>#FF6347</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FF4500;" data-color="#FF4500">OrangeRed<br>#FF4500</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FF8C00;" data-color="#FF8C00">DarkOrange<br>#FF8C00</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
             <div class="cardContainer ">
-                <button class="btn"  style="background-color: #e879f9;">Fuchsia<br>#e879f9</button>
+                <button class="btn"  style="background-color: #FFD700;" data-color="#FFD700">Gold<br>#FFD700</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FFA500;" data-color="#FFA500">Orange<br>#FFA500</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn"  style="background-color: #FFD700;" data-color="#FFD700">Yellow<br>#FFD700</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #FFFFE0;color: black;" data-color="#FFFFE0" >LightYellow<br>#FFFFE0</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #f472b6;">Pink<br>#f472b6</button>
+                <button class="btn" style="background-color: #FFFACD;color: black;" data-color="#FFFACD" >YellowChiffon<br>#FFFACD</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn"  style="background-color: #fb7185;">Rose<br>#fb7185</button>
+                <button class="btn" style="background-color: #FFEFD5;color: black;" data-color="#FFEFD5" >PapayaWhip<br>#FFEFD5</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
             <div class="cardContainer">
-                <button class="btn" style="background-color: #707370" >Grey<br>#707370</button>
-                
+                <button class="btn" style="background-color: #FFE4B5;color: black;" data-color="#FFE4B5" >Moccasin<br>#FFE4B5</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
             </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #FFDAB9;color: black;" data-color="#FFDAB9" >Peachpuff<br>#FFDAB9</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #EEE8AA;" data-color="#EEE8AA" >PaleGoldRod<br>#EEE8AA</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #F0E68C;" data-color="#F0E68C" >Khakhi<br>#F0E68C</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #BDB76B;" data-color="#BDB76B" >DarkKhakhi<br>#BDB76B</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #E6E6FA;" data-color="#E6E6FA" >Lavender<br>#E6E6FA</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #D8BFD8;" data-color="#D8BFD8" >Thistlei<br>#D8BFD8</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #DDA0DD;" data-color="#DDA0DD" >Plum<br>#DDA0DD</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #EE82EE;" data-color="#EE82EE" >Violet<br>#EE82EE</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #DA70D6;" data-color="#DA70D6" >Orchid<br>#DA70D6</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #FF00FF;" data-color="#FF00FF" >Fuchsia<br>#FF00FF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #BA55D3;" data-color="#BA55D3" >MediumOrchid<br>#BA55D3</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #9370DB;" data-color="#9370DB" >MediumPurple<br>#9370DB</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: #663399;" data-color="#663399" >RebeccaPurple<br>#663399</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#8A2BE2;" data-color="#8A2BE2" >BlueViolet<br>#8A2BE2</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#9400D3;" data-color="#9400D3" >DarkViolet<br>#9400D3</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#8B008B;" data-color="#8B008B" >DarkMagenta<br>#8B008B</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#800080;" data-color="#800080" >Purple<br>#800080</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#4B0082;" data-color="#4B0082" >Indigo<br>#4B0082</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#6A5ACD;" data-color="#6A5ACD" >SlateBlue<br>#6A5ACD</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#483D8B;" data-color="#483D8B" >DarkSlateBlue<br>#483D8B</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#7B68EE;" data-color="#7B68EE" >MediumSlateBlue<br>#7B68EE</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#5F9EA0;" data-color="#5F9EA0" >CadetBlue<br>#5F9EA0</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#4682B4;" data-color="#4682B4" >SteelBlue<br>#4682B4</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#B0C4DE;" data-color="#B0C4DE" >LightSteelBlue<br>#B0C4DE</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#B0E0E6;" data-color="#B0E0E6" >PowderBlue<br>#B0E0E6</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#ADD8E6;" data-color="#ADD8E6" >LightBlue<br>#ADD8E6</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#87CEEB;" data-color="#87CEEB" >SkyBlue<br>#87CEEB</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#87CEFA;" data-color="#87CEFA" >LightSkyBlue<br>#87CEFA</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#00BFFF;" data-color="#00BFFF" >DeepSkyBlue<br>#00BFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#1E90FF;" data-color="#1E90FF" >DogerBlue<br>#1E90FF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#6495ED;" data-color="#6495ED" >CornflowerBlue<br>#6495ED</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#7B68EE;" data-color="#7B68EE" >MediumSlateBlue<br>#7B68EE</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#4169E1;" data-color="#4169E1" >royalBlue<br>#4169E1</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#0000FF;" data-color="#0000FF" >Blue<br>#0000FF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#0000CD;" data-color="#0000CD" >MediumBlue<br>#0000CD</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#00008B;" data-color="#00008B" >DarkBlue<br>#00008B</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#000080;" data-color="#000080" >Navy<br>#000080</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#191970;" data-color="#191970" >MidNightBlue<br>#191970</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#00FFFF;" data-color="#00FFFF" >Aqua/cyan<br>#00FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#E0FFFF;" data-color="#E0FFFF" >LightCyan<br>#E0FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#AFEEEE;" data-color="#AFEEEE" >PaleTurquoise<br>#AFEEEE</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#7FFFD4;" data-color="#7FFFD4" >Aquamarine<br>#7FFFD4</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#E0FFFF;" data-color="#E0FFFF" >LightCyan<br>#E0FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#E0FFFF;" data-color="#E0FFFF" >LightCyan<br>#E0FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#E0FFFF;" data-color="#E0FFFF" >LightCyan<br>#E0FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+            <div class="cardContainer">
+                <button class="btn" style="background-color: 	#E0FFFF;" data-color="#E0FFFF" >LightCyan<br>#E0FFFF</button>
+                <div><p class="copy_alert text">Copied✅</p></div>
+            </div>
+
         </div>
-</body>
+        <script src="./script.js"></script>
+
+    </body>
 </html>
