@@ -37,9 +37,9 @@ h3{
 p {
     text-align: center;
      color: #fff;
-     font-family: 'Courier New', Courier, monospace;
-     font-weight: bold;
-     font-size: larger;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight:bold;
+     font-size: 20px;
    
 }
 .cardContainer{
@@ -65,9 +65,10 @@ p {
     justify-content: center;
     align-items: center;
     margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 25px;
 }
 .btn:hover {
