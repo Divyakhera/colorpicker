@@ -12,4 +12,4 @@
 <br>
 
 # Screen Record
-![Captured ColorBar]()
+![Captured ColorBar](/ColorBar.gif)
