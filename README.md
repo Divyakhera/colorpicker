@@ -11,5 +11,5 @@
 <br>
 <br>
 
-# Screen Record
+# Preview
 ![Captured ColorBar](/ColorBar.gif)
